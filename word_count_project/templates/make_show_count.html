@@ -1,0 +1,25 @@
+<h1> make show count html </h1>
+
+<a href="{% url 'homeAlias' %}">Start Again</a>
+<hr/>
+<h2> there are {{ lenOfWordList }} words tiped </h2>
+
+{{ myKey }}
+
+<br/><br/><br/>
+
+<p> {{ wordDicKey }} </p>
+
+<br/><hr/>
+
+<p> Sorted: {{ mySortedDic }}</p>
+
+<br/><hr/>
+{% for word, counter in wordDicKey %}
+
+<p> the counter for the word <em><u>({{ word }})</u></em> is as follows: </p>
+
+    <p> {{ counter }} </p>
+<br/>
+<hr/>
+{% endfor %}

@@ -1,0 +1,13 @@
+<h1> Word Count Proj App</h1>
+
+{{ dicKey }}
+
+<!-- <form action = "count_url">  can be like this. Using alias equal to views.path('_____', ,) -->
+<form action="{% url 'myCountHtmlAlias' %}">
+    <textarea cols="40" rows="5" name="myTextArea"></textarea>
+    <br />
+    <input type="submit" value="make count!"/>
+
+</form>
+
+<a href="{% url 'goto_about' %}">Go to about</a>
